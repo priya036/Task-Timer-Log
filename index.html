@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timelogger</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="details">
+            <h3>Time Logger</h3>
+            <input type="text" placeholder="Task" id="task">
+            <input type="text" placeholder="Description" id="description">
+
+            <div class="timer">
+                <button id="timer-control">start</button>
+                <p id="hours">00</p>
+                <p>&nbsp;:&nbsp;</p>
+                <p id="minutes">00</p>
+                <p>&nbsp;:&nbsp;</p>
+                <p id="seconds">00</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <table id="entries" border="1px">
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Description</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+
+</body>
+<script type="module" src="./script.js"></script>
+
+</html>
