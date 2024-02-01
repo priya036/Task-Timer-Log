@@ -47,7 +47,7 @@ function startTimer() {
       seconds.textContent = s.toString().padStart(2, '0')
       minutes.textContent = m.toString().padStart(2, '0')
       hours.textContent = h.toString().padStart(2, '0')
-    }, 10)
+    }, 1000)
     timerControl.textContent = 'stop'
     timerControl.style.setProperty('background-color', 'tomato')
   }
