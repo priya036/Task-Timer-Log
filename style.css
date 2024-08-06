@@ -5,7 +5,7 @@
     border: 1px;
     width: 400px;
     height: 300px;
-    background: linear-gradient(135deg, #85b707, #f4f412);
+    background: linear-gradient(151deg, #13e5e1, #a078eb);
     border-radius: 10px;
     box-shadow: 0 4px 8px 0;
     margin-left: 350px;
@@ -86,7 +86,7 @@ button {
      transition: all 0.3s ease-in-out;
   }
   .btn:hover {
-    background: linear-gradient(to bottom, #324f04, #84c003);
+    background: linear-gradient(to bottom, #3e6106, #84c003);
     animation: button-particles 1s ease-in-out infinite;
     transform: translateY(-2px);
   }
