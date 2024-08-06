@@ -2,7 +2,8 @@
 const button = document.getElementById('button-select')
 const task = document.getElementById('task')
 const description = document.getElementById('description')
-const entryTable = document.getElementById('entries')
+const entriesTable = document.getElementById('entries');
+const entryTable = document.getElementById('entries').querySelector('tbody');
 const counterValue = document.getElementById('counter-value')
 const timerControl = document.getElementById('timer-control')
 const seconds = document.getElementById('seconds')
@@ -53,13 +54,14 @@ function startTimer() {
   }
   else if (timerControl.textContent === 'stop') {
     timerControl.textContent = 'start'
-    timerControl.style.setProperty('background-color', 'green')
+    timerControl.style.setProperty('background-color', 'white')
 
     // Stop the timer
     clearInterval(intervalId)
 
     // Add the task details to the table
     addTask();
+    entriesTable.style.display = 'table';
   }
 }
 

@@ -5,7 +5,7 @@
     border: 1px;
     width: 400px;
     height: 300px;
-    background-color: rgb(228, 224, 224);
+    background: linear-gradient(135deg, #85b707, #f4f412);
     border-radius: 10px;
     box-shadow: 0 4px 8px 0;
     margin-left: 350px;
@@ -28,39 +28,111 @@ input {
 
 button {
     padding: 10px;
-    background-color: green;
     border-radius: 10px;
     margin: 10px;
-    color: aliceblue;
     align-self: center;
 }
+
+.input {
+    max-width: 200px;
+    min-height: 30px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    background: #e8e8e8;
+    box-shadow: 2px 2px 10px #c8c8c8,
+               -2px -2px 10px #ffffff;
+    border: none;
+    border-radius: 10px;
+    transition: all .5s;
+  }
+  
+  .input:focus {
+    background: #e8e8e8;
+    box-shadow: inset 5px 5px 17px #c8c8c8,
+              inset -5px -5px 17px #ffffff;
+  }
+  
+
+  @media (max-width: 768px) {
+    .container {
+        width: 95%; /* Increase width for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Media Query for very small screens */
+@media (max-width: 480px) {
+    .container {
+        width: 100%; /* Full width on very small screens */
+        padding: 5px; /* Further adjust padding for very small screens */
+    }
+}
+
+  .btn {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, rgb(88, 105, 1), #6b8e03);
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+     border-radius: 30px;
+     padding: 14px 28px;
+     cursor: pointer;
+     box-shadow: 0 5px 15px rgba(40, 40, 40, 0.2);
+     animation: button-shimmer 2s infinite;
+     transition: all 0.3s ease-in-out;
+  }
+  .btn:hover {
+    background: linear-gradient(to bottom, #324f04, #84c003);
+    animation: button-particles 1s ease-in-out infinite;
+    transform: translateY(-2px);
+  }
+  
+  
+  
 .timer {
     display: flex;
     align-items: center;
 }
+
+
 #entries {
     border-collapse: collapse;
-    width: 50%; 
-    margin: 20px auto; 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    width: 60%; 
+    margin: 30px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden;
+    display: none; /* To ensure the rounded corners work */
 }
 
 #entries th {
-    background-color: rgb(20, 20, 118);
+    background-color: rgb(121, 145, 2) ;
     color: white;
-    padding: 12px; 
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 14px; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    text-align: left;
+    font-size: 1.1em; /* Slightly larger font size */
 }
 
 #entries td {
-    border: 1px solid wheat;
-    padding: 10px; 
+    border: 1px solid #ddd; /* Lighter border color */
+    padding: 12px; 
     text-align: left;
-    background-color: rgb(149, 240, 215);
-    color: black;
-    transition: background-colour 0.3s ease, box-shadow 0.3s ease;
+    background-color: #f9f9f9; /* Lighter background color */
+    color: #333; /* Darker text color */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+#entries tr:nth-child(even) td {
+    background-color: #f2f2f2; /* Alternating row colors */
+}
+
 #entries tr:hover td {
-    background-color: rgb(120, 215, 190);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    background-color: #e0f7fa; /* Lighter hover background */
+    box-shadow: 0 4px 12px rgba(104, 104, 104, 0.15); /* Enhanced shadow */
+    transform: scale(1.02); /* Slight zoom effect on hover */
 }
