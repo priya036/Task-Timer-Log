@@ -70,13 +70,13 @@ button {
   .btn {
     position: relative;
     display: inline-block;
-    background: linear-gradient(to bottom, rgb(88, 105, 1), #6b8e03);
+    background: linear-gradient(to bottom, rgb(136, 143, 1), #6b8e03);
     color: white;
     font-family: "Segoe UI", sans-serif;
     font-weight: bold;
     font-size: 18px;
     border: none;
-     border-radius: 30px;
+     border-radius: 20px;
      padding: 14px 28px;
      cursor: pointer;
      box-shadow: 0 5px 15px rgba(40, 40, 40, 0.2);
@@ -89,14 +89,10 @@ button {
     transform: translateY(-2px);
   }
   
-  
-  
 .timer {
     display: flex;
     align-items: center;
 }
-
-
 #entries {
     border-collapse: collapse;
     width: 60%; 
