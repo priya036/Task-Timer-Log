@@ -70,7 +70,7 @@ button {
   .btn {
     position: relative;
     display: inline-block;
-    background: linear-gradient(to bottom, rgb(136, 143, 1), #6b8e03);
+    background: linear-gradient(to bottom, rgb(161, 1, 1), #fa2bb2);
     color: white;
     font-family: "Segoe UI", sans-serif;
     font-weight: bold;
@@ -84,7 +84,7 @@ button {
      transition: all 0.3s ease-in-out;
   }
   .btn:hover {
-    background: linear-gradient(to bottom, #3e6106, #84c003);
+    background: linear-gradient(to bottom, #4b8701, #84c003);
     animation: button-particles 1s ease-in-out infinite;
     transform: translateY(-2px);
   }
