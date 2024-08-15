@@ -5,7 +5,7 @@
     border: 1px;
     width: 400px;
     height: 300px;
-    background: linear-gradient(151deg, #13e5e1, #a078eb);
+    background: linear-gradient(151deg, #31efec, #a078eb);
     border-radius: 10px;
     box-shadow: 0 4px 8px 0;
     margin-left: 350px;
@@ -40,8 +40,6 @@ button {
     font-family: 'Courier New', Courier, monospace;
     outline: none;
     background: #e8e8e8;
-    box-shadow: 2px 2px 10px #c8c8c8,
-               -2px -2px 10px #ffffff;
     border: none;
     border-radius: 10px;
     transition: all .5s;
@@ -49,7 +47,7 @@ button {
   
   .input:focus {
     background: #e8e8e8;
-    box-shadow: inset 5px 5px 17px #c8c8c8,
+    box-shadow: inset 5px 5px 17px #c5c4c4,
               inset -5px -5px 17px #ffffff;
   }
   
