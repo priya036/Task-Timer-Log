@@ -17,32 +17,36 @@
 
 }
 
-input {
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    display: block;
-}
-
 .details {
     display: block;
 }
 
 button {
-    padding: 10px;
-    border-radius: 10px;
     margin: 10px;
     align-self: center;
+    background-color: #E4003A;
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 16px; 
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px; 
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
 }
 
 .input {
     max-width: 200px;
     min-height: 30px;
     padding: 10px;
+    margin: 10px;
     font-family: 'Courier New', Courier, monospace;
     outline: none;
     background: #e8e8e8;
     border: none;
+    display: block;
     border-radius: 10px;
     transition: all .5s;
 }
@@ -57,42 +61,15 @@ button {
 @media (max-width: 768px) {
     .container {
         width: 95%;
-        /* Increase width for smaller screens */
         padding: 10px;
-        /* Adjust padding for smaller screens */
     }
 }
 
-/* Media Query for very small screens */
 @media (max-width: 480px) {
     .container {
         width: 100%;
-        /* Full width on very small screens */
         padding: 5px;
-        /* Further adjust padding for very small screens */
     }
-}
-
-
-.btn {
-    position: relative;
-    display: inline-block;
-    background: linear-gradient(to bottom, #E4003A, #FF8A8A); /* Blue gradient */
-    color: white;
-    font-family: "Segoe UI", sans-serif;
-    font-weight: bold;
-    font-size: 16px; 
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px; 
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-}
-.btn:hover {
-    animation: button-particles 1s ease-in-out infinite;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -107,10 +84,8 @@ button {
     margin: 30px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
-    /* Rounded corners */
     overflow: hidden;
     display: none;
-    /* To ensure the rounded corners work */
 }
 
 #entries th {
@@ -118,10 +93,8 @@ button {
     color: white;
     padding: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* Modern font */
     text-align: left;
     font-size: 1.1em;
-    /* Slightly larger font size */
 }
 
 #entries td {

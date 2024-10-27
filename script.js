@@ -54,12 +54,10 @@ function startTimer() {
   }
   else if (timerControl.textContent === 'stop') {
     timerControl.textContent = 'start'
-    timerControl.style.setProperty('background-color', 'white')
+    timerControl.style.setProperty('background-color', 'green')
 
-    // Stop the timer
     clearInterval(intervalId)
 
-    // Add the task details to the table
     addTask();
     entriesTable.style.display = 'table';
   }
