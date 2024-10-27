@@ -73,28 +73,28 @@ button {
     }
 }
 
+
 .btn {
     position: relative;
     display: inline-block;
-    background: linear-gradient(to bottom, rgb(161, 1, 1), #fa2bb2);
+    background: linear-gradient(to bottom, #E4003A, #FF8A8A); /* Blue gradient */
     color: white;
     font-family: "Segoe UI", sans-serif;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px; 
     border: none;
-    border-radius: 20px;
-    padding: 14px 28px;
+    border-radius: 10px;
+    padding: 10px 20px; 
     cursor: pointer;
-    box-shadow: 0 5px 15px rgba(40, 40, 40, 0.2);
-    animation: button-shimmer 2s infinite;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
 }
-
 .btn:hover {
-    background: linear-gradient(to bottom, #4b8701, #84c003);
     animation: button-particles 1s ease-in-out infinite;
     transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
 
 .timer {
     display: flex;
@@ -126,56 +126,24 @@ button {
 
 #entries td {
     border: 1px solid #ddd;
-    /* Lighter border color */
     padding: 12px;
     text-align: left;
     background-color: #f9f9f9;
-    /* Lighter background color */
     color: #333;
-    /* Darker text color */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #entries tr:nth-child(even) td {
     background-color: #f2f2f2;
-    /* Alternating row colors */
 }
 
 #entries tr:hover td {
     background-color: #e0f7fa;
-    /* Lighter hover background */
     box-shadow: 0 4px 12px rgba(104, 104, 104, 0.15);
-    /* Enhanced shadow */
     transform: scale(1.02);
-    /* Slight zoom effect on hover */
 }
 
 
-.btn {
-    position: relative;
-    display: inline-block;
-    background: linear-gradient(to bottom, #E4003A, #FF8A8A); /* Blue gradient */
-    color: white;
-    font-family: "Segoe UI", sans-serif;
-    font-weight: bold;
-    font-size: 16px; 
-    border: none;
-    border-radius: 10px;
-    padding: 10px 20px; 
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease-in-out;
-}
 
-/* Hover effects */
-.btn:hover {
-  
-    transform: translateY(-2px); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
 
-/* Focus effect */
-.btn:focus {
-    outline: none; 
-    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5); 
-}
+/* background: linear-gradient(to bottom, #4b8701, #84c003); */
