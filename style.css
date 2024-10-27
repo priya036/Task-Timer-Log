@@ -1,11 +1,12 @@
-*{
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .container {
     border: 1px;
     width: 400px;
     height: 300px;
-    background: linear-gradient(151deg, #31efec, #a078eb);
+    background: linear-gradient(151deg, #d7a5a5, #EDE8DC);
     border-radius: 10px;
     box-shadow: 0 4px 8px 0;
     margin-left: 350px;
@@ -13,8 +14,9 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
-    
+
 }
+
 input {
     border-radius: 10px;
     padding: 10px;
@@ -43,31 +45,35 @@ button {
     border: none;
     border-radius: 10px;
     transition: all .5s;
-  }
-  
-  .input:focus {
+}
+
+.input:focus {
     background: #e8e8e8;
     box-shadow: inset 5px 5px 17px #c5c4c4,
-              inset -5px -5px 17px #ffffff;
-  }
-  
+        inset -5px -5px 17px #ffffff;
+}
 
-  @media (max-width: 768px) {
+
+@media (max-width: 768px) {
     .container {
-        width: 95%; /* Increase width for smaller screens */
-        padding: 10px; /* Adjust padding for smaller screens */
+        width: 95%;
+        /* Increase width for smaller screens */
+        padding: 10px;
+        /* Adjust padding for smaller screens */
     }
 }
 
 /* Media Query for very small screens */
 @media (max-width: 480px) {
     .container {
-        width: 100%; /* Full width on very small screens */
-        padding: 5px; /* Further adjust padding for very small screens */
+        width: 100%;
+        /* Full width on very small screens */
+        padding: 5px;
+        /* Further adjust padding for very small screens */
     }
 }
 
-  .btn {
+.btn {
     position: relative;
     display: inline-block;
     background: linear-gradient(to bottom, rgb(161, 1, 1), #fa2bb2);
@@ -76,57 +82,70 @@ button {
     font-weight: bold;
     font-size: 18px;
     border: none;
-     border-radius: 20px;
-     padding: 14px 28px;
-     cursor: pointer;
-     box-shadow: 0 5px 15px rgba(40, 40, 40, 0.2);
-     animation: button-shimmer 2s infinite;
-     transition: all 0.3s ease-in-out;
-  }
-  .btn:hover {
+    border-radius: 20px;
+    padding: 14px 28px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(40, 40, 40, 0.2);
+    animation: button-shimmer 2s infinite;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
     background: linear-gradient(to bottom, #4b8701, #84c003);
     animation: button-particles 1s ease-in-out infinite;
     transform: translateY(-2px);
-  }
-  
+}
+
 .timer {
     display: flex;
     align-items: center;
 }
+
 #entries {
     border-collapse: collapse;
-    width: 60%; 
-    margin: 30px auto; 
+    width: 60%;
+    margin: 30px auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px; /* Rounded corners */
+    border-radius: 8px;
+    /* Rounded corners */
     overflow: hidden;
-    display: none; /* To ensure the rounded corners work */
+    display: none;
+    /* To ensure the rounded corners work */
 }
 
 #entries th {
-    background-color: rgb(121, 145, 2) ;
+    background-color: rgb(121, 145, 2);
     color: white;
-    padding: 14px; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    padding: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Modern font */
     text-align: left;
-    font-size: 1.1em; /* Slightly larger font size */
+    font-size: 1.1em;
+    /* Slightly larger font size */
 }
 
 #entries td {
-    border: 1px solid #ddd; /* Lighter border color */
-    padding: 12px; 
+    border: 1px solid #ddd;
+    /* Lighter border color */
+    padding: 12px;
     text-align: left;
-    background-color: #f9f9f9; /* Lighter background color */
-    color: #333; /* Darker text color */
+    background-color: #f9f9f9;
+    /* Lighter background color */
+    color: #333;
+    /* Darker text color */
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #entries tr:nth-child(even) td {
-    background-color: #f2f2f2; /* Alternating row colors */
+    background-color: #f2f2f2;
+    /* Alternating row colors */
 }
 
 #entries tr:hover td {
-    background-color: #e0f7fa; /* Lighter hover background */
-    box-shadow: 0 4px 12px rgba(104, 104, 104, 0.15); /* Enhanced shadow */
-    transform: scale(1.02); /* Slight zoom effect on hover */
+    background-color: #e0f7fa;
+    /* Lighter hover background */
+    box-shadow: 0 4px 12px rgba(104, 104, 104, 0.15);
+    /* Enhanced shadow */
+    transform: scale(1.02);
+    /* Slight zoom effect on hover */
 }
