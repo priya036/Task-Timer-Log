@@ -149,3 +149,33 @@ button {
     transform: scale(1.02);
     /* Slight zoom effect on hover */
 }
+
+
+.btn {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, #E4003A, #FF8A8A); /* Blue gradient */
+    color: white;
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+    font-size: 16px; 
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px; 
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.btn:hover {
+  
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Focus effect */
+.btn:focus {
+    outline: none; 
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5); 
+}
